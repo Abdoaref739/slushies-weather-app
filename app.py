@@ -20,9 +20,9 @@ def weather():
         final_data = response.json()
         return render_template('weather.html', city_name=final_data['location']['name'], city_region=final_data['location']['region'], city_country=final_data['location']['country'], city_localtime=final_data['location']['localtime'], city_temp_c=final_data['current']['temp_c'], city_temp_f=final_data['current']['temp_f'], city_condition=final_data['current']['condition']['text'], city_icon=final_data['current']['condition']['icon'], city_wind_mph=final_data['current']['wind_mph'], city_wind_kph=final_data['current']['wind_kph'], city_humidity=final_data['current']['humidity'], city_pressure_mb=final_data['current']['pressure_mb'], city_pressure_in=final_data['current']['pressure_in'])
 
-@app.route('/history')
+@app.route('/about')
 def history():
-    return render_template('history.html')
+    return render_template('about.html')
 
 
 

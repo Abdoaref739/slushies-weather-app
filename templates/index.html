@@ -10,13 +10,16 @@
     <div class="flex justify-center bg-black text-white h-screen">
     <h1 class="md:text-5xl font-mono my-30">weather app landing page</h1>
     <button class="w-45 h-15 bg-white text-black my-60 mx-10 rounded font-mono absolute cursor-pointer hover:bg-gray-100" id="start-button">start</button>
-    <button class="w-45 h-15 bg-white text-black my-80 mx-10 rounded font-mono absolute cursor-pointer hover:bg-gray-100" id="history-button">history</button>
+    <button class="w-45 h-15 bg-white text-black my-80 mx-10 rounded font-mono absolute cursor-pointer hover:bg-gray-100" id="about-button">history</button>
     </div>
     <script>
         let start_button = document.getElementById("start-button");
-        let history_button = document.getElementById("history-button");
+        let about_button = document.getElementById("about-button");
         start_button.addEventListener("click", () => {
             window.location.href = "/weather";
+        })
+        about_button.addEventListener("click", () => {
+            window.location.href = "/about";
         })
     </script>
 </body>
